@@ -15,7 +15,7 @@ public class GitHubHover {
         Configuration.pageLoadStrategy = "eager";
     }
     @Test
-    void SelenideHoverSearch() {
+    void gitHubHoverTest() {
         open("https://github.com/");
         $(".header-logged-out").$(byText("Solutions")).hover();
         $("[href='https://github.com/enterprise']").click();
